@@ -1,2 +1,4 @@
 # XCode
-Refere-se ao curso de Front-End do Senai de Outubro/2017 a Abril/2018
+Refere-se aos exercícios do curso de Front-End do Senai.
+
+Out/2017 a Abril/2018
