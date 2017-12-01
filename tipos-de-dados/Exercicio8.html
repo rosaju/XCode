@@ -1,0 +1,39 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Média</h1>
+    <script>
+
+        // entrada
+        var nota1 = prompt ("Digite a primeira nota");
+        var nota2 = prompt ("Digite a segunda nota");
+        var nota3 = prompt ("Digite a terceira nota");
+        var nota4 = prompt ("Digite a quarta nota");
+        var resultado;
+
+        //processamento
+        nota1 = parseFloat(nota1);
+        nota2 = parseFloat(nota2);
+        nota3 = parseFloat(nota3);
+        nota4 = parseFloat(nota4);
+        var resultado = ( nota1 + nota2 + nota3 + nota4 ) / 4;
+
+        //saída
+        console.log(resultado.toFixed(2));
+
+        //console.log(resultado.toFixed(2));
+        
+        if( resultado >= 7.0 ) {
+            console.log('APROVADO');
+        } else {
+            console.log('REPROVADO');
+        }
+
+    </script>
+</body>
+</html>

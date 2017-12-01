@@ -1,0 +1,45 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Estrutura Encadeada</h1>
+    <script>
+        
+        // entrada
+        var preço = prompt("Insira o valor do produto");
+        var cod = prompt("Insira o código do produto");
+
+        // processamento
+        cod = parseFloat(cod);
+
+        // saída
+        console.log(cod);
+
+        // alert(cod);
+
+        if( cod == 1 ) {
+            alert('SUL');
+        } else if( cod == 2 ) {
+            alert('NORTE');
+        } else if( cod == 3 ) {
+            alert('LESTE');
+        } else if( cod == 4 ) {
+            alert('OESTE');
+        } else if( cod == 5 || cod == 6 ) {
+            alert('NORDESTE');
+        } else if( cod >= 7 && cod <= 9 ) {
+            alert('SUDESTE');
+        } else if( cod >= 10 && cod <= 20 ) {
+            alert('CENTRO-OESTE');
+        } else ( cod >= 21 && cod <= 30 ) {
+            alert('SEM DEFINIÇÃO');
+        }
+
+    </script>
+    
+</body>
+</html>
