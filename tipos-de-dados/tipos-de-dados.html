@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Lógica com JavaScript</h1>
+    <script>
+        // entrada
+        var nome = prompt("Digite seu nome");
+        var peso = parseFloat (prompt("Qual seu peso em quilos?"));
+        var altura = prompt("Qual sua altura em metros?");
+        var imc;
+        //processamento
+        altura = parseFloat(altura);
+        imc = peso / (altura * altura);
+        //saída
+        console.log(imc.toFixed(2));
+    </script>
+</body>
+</html>

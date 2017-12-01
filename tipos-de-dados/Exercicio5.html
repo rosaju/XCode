@@ -1,0 +1,36 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Conversão de Valores</h1>
+    <script>
+        // entrada
+        var centimetros = prompt("Digite uma medida em centímetros");
+
+        // processamento
+        centimetros = parseFloat(centimetros);
+        var polegadas = centimetros / 2.5;
+
+        // saída
+        console.log(polegadas);
+
+        //console.log(imc.toFixed(2));
+
+        var idade = 15;
+        
+        if( idade < 11 ) {
+            console.log('INFANTIL');
+        } else if( idade < 18 ){
+            console.log('JUVENIL');
+        } else {
+            console.log('SÊNIOR');
+        }
+        
+    </script>
+    
+</body>
+</html>
