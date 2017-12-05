@@ -7,16 +7,16 @@
 </head>
 <body>
     <script>
-        var numero = 0;
-        var soma = 0;
 
-        for ( var i = 1; i <= 15; i++ ){
-            numero = prompt("Digite um número");
-            soma = parseFloat(numero) + soma;
+        function soma(a, b){
+            return a + b;
         }
 
-        document.write("Soma: " + soma );
+        document.write( soma(5, 12) );
+        document.write( "<br>");
 
+        document.write( soma(2, 5) );
+        
     </script>
 </body>
 </html>
