@@ -1,0 +1,32 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        var produtos = [];
+
+        var goiaba = {
+            descricao : "Goiaba",
+            preco : 5.98
+        };
+
+        var abacate = {
+            descricao : "Abacate",
+            preco : 6.79
+        };
+
+        produtos.push(goiaba);
+        produtos.push(abacate);
+
+        for(var i = 0; i <= 1; i++){
+            console.log( produtos[i].descricao +" "+ produtos[i].preco );
+        }
+
+    </script>
+</body>
+</html>
