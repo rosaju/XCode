@@ -1,1 +1,29 @@
-.
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+    font-family: 'Roboto', sans-serif;
+}
+
+.carrinho {
+    list-style: none;
+    display: flex;      
+}
+
+.carrinho_shopping {
+    background-color: #B2095E;
+    padding: 1rem 2.5rem;
+}
+
+.carrinho_shipping {
+    padding: 1rem 2.5rem;
+}
+
+.carrinho_payment {
+    padding: 1rem 2.5rem;
+}
+
+.tabela {
+    
+}
