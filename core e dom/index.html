@@ -5,56 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="carrinho.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" 
+    crossorigin="anonymous">
     <title>Document</title>
 </head>
-<body>
-    <div>
-        <ul class="carrinho">
-            <li class="carrinho_shopping">
-                <span class="carrinho_shopping_num">1</span> Shopping Card
-            </li>
-            <li class="carrinho_shipping">
-                <span class="carrinho_shopping_num">2</span> Shipping Info
-            </li>
-            <li class="carrinho_payment">
-                <span class="carrinho_shopping_num">3</span> Payment Method
-            </li>
-        </ul>
-    </div>
-    <p>You have 3 items in your order</p>
-    <table class="tabela">
-        <th>Name</th>
-        <th>Price</th>
-        <th>Quantity</th>
-        <th>Total</th>
-        <tr>
-            <td><img src="" alt="">Puma Golf Raglan Tech Polo Tee</td>
-            <td>$72</td>
-            <td>3</td>
-            <td>$216</td>
-        </tr>
-        <tr>
-            <td><img src="" alt="">Nike Men's Running Shoes</td>
-            <td>$129</td>
-            <td>1</td>
-            <td>$129</td>
-        </tr>
-        <tr>
-            <td><img src="" alt="">DC Men's Axis Snowboard Jacket</td>
-            <td>$89</td>
-            <td>2</td>
-            <td>$178</td>
-        </tr>
-        <tr>
-            <td></td>
-            <td></td>
-            <td>Subtotal</td>
-            <td>$523</td>
-        </tr>      
-    </table>    
-    <p>Continue Shopping</p>
-    <button class="botão">Shipping Info</button>
+<body onload="listarProdutos()">
+    <!-- <header class="header">
+        <div class="head"><span>1</span><span>Shopping Cart</span></div>
+        <div class="head"><span>2</span><span>Shipping Info</span></div>
+        <div class="head"><span>3</span><span>Payment Method</span></div>
+    </header> -->
+    <main>
+        <section>
+                <div class="name__info">
+                    <span class="title__cart title__cart--modify">Name</span>
+                    <span class="title__cart">Price</span>
+                    <span class="title__cart">Quantity</span>
+                    <span class="title__cart">Total</span>
+                </div>
+               
+            <div id="products">
+                
+            </div>
+
+            <div>
+                <span> Subtotal: R$523</span>
+                <span><i></i> Continue Shopping</span>
+                <button type="submit">Shipping Info</button>
+            </div>
+            <div class="clear"></div>
+        </section>
+    </main>
     <script src="carrinho.js"></script>
-</body>
+    </body>
 </html>
