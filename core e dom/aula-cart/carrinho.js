@@ -56,20 +56,21 @@ function listarProdutos(){
     var moeda = "R$";
     
     for(var i = 0; i < produtos.length; i++){
-        console.log( produtos[i] );
+        var totalProduto = (produtos[i].qtd * produtos[i].preco);
+
         template += '<div class="product">';
         template +=     '<i class="fa fa-times-circle"></i>';
         template +=     '<img src="' +produtos[i].imagem.src+ '" alt="t-shirt" class="product__img">';
         template +=     '<span id="p1" class="product__name">'+produtos[i].descricao+'</span>';
         template +=     '<span id="c1" class="product__color">'+produtos[i].cor+'</span>';
         template +=     '<span id="s1" class="product__size"></span>';
-        template +=     '<span id="v1" class="product__value"><strong>R$ </strong>'+produtos[i].preco+'</span>*<input type="number"  value="'+produtos[i].qtd+'" name="" id=""> = <span> <strong>R$ </strong>'+(produtos[i].qtd * produtos[i].preco)+'</span>';
+        template +=     '<span id="v1" class="product__value"><strong>R$ </strong>'+produtos[i].preco+'</span>*<input type="number"  value="'+produtos[i].qtd+'" name="" id=""> = <span> <strong>R$ </strong>'+totalProduto+'</span>';
         template += '</div>'; 
         subtotal += (produtos[i].qtd * produtos[i].preco);
         console.log(subtotal);
     }
 
-    document.getElementById("subtotal").innerText =  moeda+subtotal;
+    document.getElementById("subtotal").innerText = "Subtotal:" + moeda+subtotal;
 
     document.getElementById("products").innerHTML = template;
 }
