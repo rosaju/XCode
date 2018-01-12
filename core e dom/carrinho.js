@@ -35,7 +35,7 @@ var produtos = [
         cor         : 'White',
         preco       : 89.97,
         qtd         : 2
-    },
+    },    
 ]
 
 
@@ -52,6 +52,8 @@ var produtos = [
 function listarProdutos(){
  //Gerar o template através do array de objetos
     var template = "";
+    var subtotal = 0;
+    var moeda = "R$";
     
     for(var i = 0; i < produtos.length; i++){
         console.log( produtos[i] );
@@ -62,8 +64,12 @@ function listarProdutos(){
         template +=     '<span id="c1" class="product__color">'+produtos[i].cor+'</span>';
         template +=     '<span id="s1" class="product__size"></span>';
         template +=     '<span id="v1" class="product__value"><strong>R$ </strong>'+produtos[i].preco+'</span>*<input type="number"  value="'+produtos[i].qtd+'" name="" id=""> = <span> <strong>R$ </strong>'+(produtos[i].qtd * produtos[i].preco)+'</span>';
-        template += '</div>';
+        template += '</div>'; 
+        subtotal += (produtos[i].qtd * produtos[i].preco);
+        console.log(subtotal);
     }
+
+    document.getElementById("subtotal").innerText =  moeda+subtotal;
 
     document.getElementById("products").innerHTML = template;
 }
