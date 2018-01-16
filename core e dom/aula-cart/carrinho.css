@@ -6,21 +6,21 @@
     outline: none;
 }
 
-html, body{
+html, body {
     width: 100%;
     height: auto;
     font-size: 14px;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.name__info{
+.name__info {
     width: 100%;
     height: 20px;
     border-bottom: 1px solid black;
 }
 
 
-.title__cart{
+.title__cart {
     width: 30px;
     height: 20px;
     display: block;
@@ -28,16 +28,16 @@ html, body{
     margin-left: 100px;
 }
 
-.title__cart--modify{
+.title__cart--modify {
     margin-right: 190px;
     margin-left: 85px;
 }
 
-.clear{
+.clear {
     clear: both;
 }
 
-.product{
+.product {
     width: 100%;
     height: 100px;
     align-items: center;
@@ -47,14 +47,14 @@ html, body{
     border-bottom: 1px solid black;
 }
 
-.product__img{
+.product__img {
     width: 50px;
     height: 50px;
     margin-top: 10px;
     display: inline-block;
 }
 
-.product__name{
+.product__name {
     width: auto;
     height: auto;
     display: block;
