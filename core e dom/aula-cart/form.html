@@ -7,24 +7,24 @@
     <link rel="stylesheet" href="./form.css">
     <title>Document</title>
 </head>
-<body>
+<body onload="dadosCliente">
     <section class="info">
         <form class="shipping-info">
             <p>Shipping address</p><br>
-            <input type="text" name="Country" placeholder="Country" autocomplete="country">
-            <input type="text" name="City" placeholder="City" autocomplete="city">
-            <input type="text" name="State/Region/Province" placeholder="State/Region/Province" autocomplete="State/Region/Province">
-            <input type="number" name="Zip Code" placeholder="Zip Code" autocomplete="postal-code">
-            <input type="text" name="Address 1" placeholder="Address 1" autocomplete="Address 1">
-            <input type="text" name="Address 2" placeholder="Address 2" autocomplete="Address 2">
+            <input id="selection_country" type="text" name="Country" placeholder="Country">
+            <input type="text" name="City" placeholder="City">
+            <input type="text" name="State/Region/Province" placeholder="State/Region/Province">
+            <input type="text" name="Zip Code" placeholder="Zip Code">
+            <input type="text" name="Address 1" placeholder="Address 1">
+            <input type="text" name="Address 2" placeholder="Address 2">
         </form>
         <br>
         <form class="contact-info">
             <p>Contact info</p><br>
-            <input type="text" name="First Name" placeholder="First Name" autocomplete="First Name">
-            <input type="text" name="Last Name" placeholder="Last Name" autocomplete="Last Name">
-            <input type="text" name="E-mail" placeholder="E-mail" autocomplete="E-mail">
-            <input type="text" name="Phone" placeholder="Phone" autocomplete="Phone">
+            <input type="text" name="First Name" placeholder="First Name">
+            <input type="text" name="Last Name" placeholder="Last Name">
+            <input type="text" name="E-mail" placeholder="E-mail">
+            <input type="text" name="Phone" placeholder="Phone">
         </form>
         <br>
         <div>

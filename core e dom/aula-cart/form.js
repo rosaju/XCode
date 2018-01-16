@@ -2,7 +2,10 @@ var dadosCliente = {
 
     endereco : {
         pais : '',
-        cidade : ''
+        cidade : '',
+        estado : '',
+        endereco1 : '',
+        endereco2 : '',
     },
     contato : {
 
@@ -11,13 +14,19 @@ var dadosCliente = {
 };
 
 function validarFormulario(){
+
+    event.preventDefault();
+
     //gerar objeto endereço baseado nos dados do validarFormulario
     objEndereco = {
-        pais : document.getElementById('selection_country').value
+        pais : document.getElementById('selection_country').value,
+        cidade : document.getElementById('selection_city').value,
+        estado : document.getElementById('state').value,
+        endereco1: document.getElementById('ad1').value,
+        endereco2: document.getElementById('ad2').value,
     };
 
-    dadosCliente.endereco = objEndereço;
-    console.log( objEndereco );
+    validarEndereco(objEndereco);
 
     //gerar objeto contato
 }
