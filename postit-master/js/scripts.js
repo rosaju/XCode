@@ -13,7 +13,7 @@
 
 var listaNotas = [];
 
-function atualizarSessao(sessaoNotas) {
+function atualizarSecao(secaoNotas) {
     //uma variavel para guardar o conteúdo da sessão 
     var conteudoSessao = "";
 
@@ -29,11 +29,10 @@ function atualizarSessao(sessaoNotas) {
     }
 
     //colocar o conteúdo dentro da sessão
-    sessaoNotas.innerHTML = conteudoSessao
+    secaoNotas.innerHTML = conteudoSecao
 }
 
-
-function criarNota(inputTitulo, textareaTexto, sessaoNotas, formulario) {
+function criarNota(inputTitulo, textareaTexto, secaoNotas, formulario) {
 
     //guardar as informações numa variavel
     var nota = {
@@ -41,27 +40,22 @@ function criarNota(inputTitulo, textareaTexto, sessaoNotas, formulario) {
         texto: textareaTexto.value
     };
 
-
     //colocar a variavel dentro da lista de notas
     listaNotas.push(nota);
 
-
     //atualizar a tela
-    atualizarSessao(sessaoNotas);
-
+    atualizarSecao(sessaoNotas);
 
     //limpar o formulário
     formulario.reset();
 }
 
-
-function removerNota(sessaoNotas, indice) {
+function removerNota(secaoNotas, indice) {
     //tirar o post-it da lista
     listaNotas.splice(indice, 1);
-
     console.log(listaNotas);
 
-
     //atualizar a sessão
-    atualizarSessao(sessaoNotas);
+    atualizarSecao(secaoNotas);
 }
+
